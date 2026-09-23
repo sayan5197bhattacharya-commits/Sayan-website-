@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sayan Bhattacharya</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#070b1a;
+  color:white;
+}
+
+nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+  padding:18px 25px;
+  background:rgba(7,11,26,.85);
+  backdrop-filter:blur(12px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #30364d;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:bold;
+}
+
+nav a{
+  color:#ddd;
+  text-decoration:none;
+  margin-left:18px;
+}
+
+nav a:hover{
+  color:#8b5cf6;
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:30px;
+  background:
+  radial-gradient(circle at 20% 20%,#49228c55,transparent 35%),
+  radial-gradient(circle at 80% 70%,#009db855,transparent 35%);
+}
+
+.hero h1{
+  font-size:clamp(45px,10vw,90px);
+  background:linear-gradient(90deg,#fff,#a78bfa,#67e8f9);
+  -webkit-background-clip:text;
+  color:transparent;
+  margin:20px 0;
+}
+
+.hero p{
+  color:#b8bfd3;
+  font-size:20px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 28px;
+  border-radius:30px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  background:linear-gradient(90deg,#7c3aed,#06b6d4);
+}
+
+section{
+  max-width:1050px;
+  margin:auto;
+  padding:80px 25px;
+}
+
+h2{
+  font-size:40px;
+  margin-bottom:25px;
+}
+
+.card{
+  padding:30px;
+  border-radius:25px;
+  background:linear-gradient(145deg,#ffffff12,#ffffff05);
+  border:1px solid #ffffff18;
+  box-shadow:0 20px 50px #0005;
+}
+
+.card p{
+  color:#b8bfd3;
+  font-size:18px;
+  line-height:1.8;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.photo{
+  height:250px;
+  border-radius:25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#352064,#075e70);
+  border:1px solid #ffffff18;
+  font-size:22px;
+}
+
+.contact{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.contact a{
+  text-decoration:none;
+  color:white;
+  padding:25px;
+  border-radius:20px;
+  background:#ffffff0d;
+  border:1px solid #ffffff15;
+}
+
+footer{
+  text-align:center;
+  padding:35px;
+  color:#8993b2;
+  border-top:1px solid #ffffff15;
+}
+
+@media(max-width:700px){
+  nav{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  nav a{
+    margin:0 7px;
+  }
+
+  .gallery,
+  .contact{
+    grid-template-columns:1fr;
+  }
+
+  h2{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Sayan</div>
+
+  <div>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero" id="home">
+  <div>
+    <p>✨ Welcome to my personal website</p>
+
+    <h1>Sayan<br>Bhattacharya</h1>
+
+    <p>My personal space for photos, information and updates.</p>
+
+    <a class="btn" href="#about">Explore ↓</a>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+
+  <div class="card">
+    <p>
+      Welcome to my official personal website.
+      This is my little space to share information,
+      photos and updates. Thanks for visiting!
+    </p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>My Gallery</h2>
+
+  <div class="gallery">
+
+    <div class="photo">📷 Photo 1</div>
+
+    <div class="photo">📷 Photo 2</div>
+
+    <div class="photo">📷 Photo 3</div>
+
+    <div class="photo">📷 Photo 4</div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact">
+
+    <a href="#">
+      📧<br>
+      <b>Email</b><br>
+      <small>Add your email</small>
+    </a>
+
+    <a href="#">
+      🌐<br>
+      <b>Social Media</b><br>
+      <small>Add your profile</small>
+    </a>
+
+    <a href="#home">
+      ↑<br>
+      <b>Back to Top</b><br>
+      <small>Return home</small>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Sayan Bhattacharya
+</footer>
+
+</body>
+</html>
